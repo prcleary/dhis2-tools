@@ -28,8 +28,8 @@ case $RELEASE in
   14.04)
     echo "installing on 14.04";;
 
-  16.04)
-    echo "installing on 16.04";;
+  18.04)
+    echo "installing on 18.04";;
 
   *)
     echo "The PPA only contains packages for Ubuntu LTS 14.04 and 16.04";
