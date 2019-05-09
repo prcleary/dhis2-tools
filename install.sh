@@ -42,16 +42,18 @@ esac
 #add PPA
 apt-get install software-properties-common
 add-apt-repository -y ppa:bobjolliffe/dhis2-tools
-add-apt-repository -y ppa:webupd8team/java
+# add-apt-repository -y ppa:webupd8team/java
 apt-get -y update
 
 #accept oracle license
-echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+# echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 
 #install java8 and dhis2-tools
-apt-get -y install oracle-java8-installer
+# apt-get -y install oracle-java8-installer
+apt-get install default-jre
+apt-get install default-jdk
+apt-get install openjdk-8-jdk
 apt-get -y install dhis2-tools
-
 
 # Uncomment below to install postgres and nginx servers on this machine
 # apt-get -y install nginx postgresql
